@@ -1,0 +1,41 @@
+.header {        
+    padding: 34px 0;
+    font-family: var(--second-font);
+    .header__inner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .logo {
+            display: block;
+            margin-right: auto;
+        }
+        .menu {
+            .menu__list {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                .menu__list-item {
+                    font-weight: 600;
+                }
+            }
+        }
+
+
+        .user-btn {
+            display: flex;
+            background-color: var(--purple-color);
+            width: 152px;
+            padding: 19px 0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 600;
+            color: #fff;
+            margin-left: 30px;
+        }
+    }
+
+}
