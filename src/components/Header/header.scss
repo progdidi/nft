@@ -23,18 +23,14 @@
 
 
         .user-btn {
-            display: flex;
-            background-color: var(--purple-color);
             width: 152px;
-            padding: 19px 0;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            font-weight: 600;
-            color: #fff;
+            padding: 19px 30px;
             margin-left: 30px;
+            p::before {
+                padding-left: 32px;
+                left: 0;
+                background-image: url('./images/user.svg');
+            }
         }
     }
 

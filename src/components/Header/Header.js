@@ -2,7 +2,6 @@ import './header.scss';
 
 //images
 import logo from './images/logo.svg';
-import user from './images/user.svg';
 
 const Header = () => {
     return ( 
@@ -20,8 +19,7 @@ const Header = () => {
                         </ul>
                     </nav>
 
-                    <button className="user-btn">
-                        <img src={user} alt="" className="user-btn__img" />
+                    <button className="user-btn purple-btn">
                         <p className="user-btn__text">Sign Up</p>
                     </button>
                 </div>
