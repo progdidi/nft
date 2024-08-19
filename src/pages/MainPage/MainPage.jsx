@@ -1,5 +1,6 @@
 import './mainPage.scss';
 import example from './images/example.png';
+import CollectionItem from '../../components/CollectionItem/CollectionItem';
 
 const MainPage = () => {
     return ( 
@@ -33,6 +34,10 @@ const MainPage = () => {
                     <div className="promo__media"><img src={example} alt="" className="promo__media-img" /></div>
                 </div>
             </div>
+        </section>
+
+        <section className="collectin">
+            <CollectionItem/>
         </section>
         </>
      );
