@@ -1,6 +1,7 @@
 import './mainPage.scss';
 import example from './images/example.png';
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
+import CreatorItem from '../../components/CreatorItem/CreatorItem';
 
 const MainPage = () => {
     return ( 
@@ -36,8 +37,29 @@ const MainPage = () => {
             </div>
         </section>
 
-        <section className="collectin">
-            <CollectionItem/>
+        <section className="collection">
+            <div className="container">
+                <h3 className="collection__title section__title">Trending Collection</h3>
+                <p className="collection__text">Checkout our weekly updated trending collection.</p>
+
+                <div className="collection__items">
+                <CollectionItem/>
+                </div>
+            </div>
+            
+        </section>
+
+        <section className="creators">
+        <div className="container">
+                <h3 className="creators__title section__title">Top creators</h3>
+                <p className="creators__text">Checkout Top Rated Creators on the NFT Marketplace</p>
+
+                <a href="" className="creators__link">View Rankings</a>
+
+                <div className="creators__items">
+                    <CreatorItem/>
+                </div>
+            </div>
         </section>
         </>
      );

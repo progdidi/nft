@@ -38,9 +38,11 @@ button {
 
 
 .section__title {
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 45px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+    font-family: var(--second-font);
 }
 
 .purple-btn {

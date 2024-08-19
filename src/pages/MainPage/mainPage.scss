@@ -66,3 +66,45 @@
     }
    
 }
+
+.collection {
+    padding: 80px 0;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-family: var(--second-font);
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.creators {
+    padding: 80px 0;
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: var(--second-font);
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+    }
+}
