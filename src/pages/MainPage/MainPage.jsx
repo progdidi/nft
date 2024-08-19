@@ -11,6 +11,7 @@ import how1 from './HowItem/how1.svg';
 import how2 from './HowItem/how2.svg';
 import how3 from './HowItem/how3.svg';
 import digest from './images/digest.png';
+import DigestSection from '../../components/DigestSection/DigestSection';
 
 const MainPage = () => {
     return ( 
@@ -125,14 +126,8 @@ const MainPage = () => {
             <div className="container">
                 <div className="digest__inner">
                     <img src={digest} alt="" className="digest__img" />
-                    <div className="digest__info">
-                        <h3 className="digest__info-title section__title">Join our weekly digest</h3>
-                        <p className="digest__info-text">Get exclusive promotions & updates straight to your inbox.</p>
-                        <form action="" className="digest-form">
-                            <input type="text" className="digest-form__input" placeholder='Enter your email here'/>
-                            <button className="digest-form__btn purple-btn">Subscribe</button>
-                        </form>
-                    </div>
+                   
+                   <DigestSection/>
                 </div>
             </div>
         </section>

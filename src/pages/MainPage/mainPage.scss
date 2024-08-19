@@ -202,38 +202,7 @@
         justify-content: space-between;
         .digest__img {
         }
-        .digest__info {
-            width: 425px;
-            &-title {
-                margin-bottom: 10px;
-            }
-            &-text {
-                font-family: var(--second-font);
-                text-transform: capitalize;
-                margin-bottom: 40px;
-            }
-            .digest-form {
-                width: 100%;
-                position: relative;
-                display: flex;
-                
-                font-family: var(--second-font);
-                &__input {
-                    padding: 19px 20px;
-                    border-radius: 20px;
-                    width: 100%;
-                    &::placeholder {
-                        font-family: var(--second-font);
-                        color: var(--background-color);
-                    }
-                }
-                &__btn {
-                    border-radius: 20px;
-                    padding: 20px 50px;
-                }
-            }
-            
-        }
+        
         
     }
     
