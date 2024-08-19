@@ -1,0 +1,45 @@
+.create-acc {
+    padding-top: 20px;
+    font-family: var(--second-font);
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .create-acc__media {
+            &-img {
+            }
+        }
+        
+        .create-acc__info {
+            
+            max-width: 460px;
+            &-title {
+                margin-bottom: 20px;
+            }
+            &-text {
+                margin-bottom: 40px;
+            }
+            .create-acc__form {
+                max-width: 330px;
+                &-input {
+                    margin-bottom: 15px;
+                    display: block;
+                    border: 1px solid var(--gray-color);
+                    border-radius: 20px;
+                    padding: 16px 20px;
+                    width: 100%;
+                    &:last-child {
+                        margin-bottom: 30px;
+                    }
+                }
+                &-btn {
+                    width: 100%;
+                    padding: 12px 0;
+                }
+            }
+            
+        }
+    }
+    
+   
+}

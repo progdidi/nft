@@ -77,7 +77,11 @@
     
     .footer__bottom {
         padding-top: 20px;
-        .footer__bottom-text {
+        &-text {
+            font-family: var(--second-font);
+            font-size: 12px;
+            line-height: 110%;
+            color: #ccc;
         }
     }
     

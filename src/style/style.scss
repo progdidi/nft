@@ -36,6 +36,13 @@ button {
     margin: 0 auto;
 }
 
+.page__title {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+    text-transform: capitalize;
+}
 
 .section__title {
     font-size: 38px;
