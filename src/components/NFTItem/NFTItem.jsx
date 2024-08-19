@@ -3,7 +3,7 @@ import './nftItem.scss';
 import example from './example.png';
 import exampleAuthor from './exampleAuthor.png';
 
-const NFTItem = () => {
+const NFTItem = ({img, title, author, price, bid}) => {
     return (
         <div className="nft-item">
             <div className="nft-item__media"><img src={example} alt="" className="nft-item__media-img" /></div>
