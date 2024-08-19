@@ -10,6 +10,7 @@ import AuctionSection from '../../components/AuctionSection/AuctionSection';
 import how1 from './HowItem/how1.svg';
 import how2 from './HowItem/how2.svg';
 import how3 from './HowItem/how3.svg';
+import digest from './images/digest.png';
 
 const MainPage = () => {
     return ( 
@@ -115,6 +116,22 @@ const MainPage = () => {
                         <img src={how3} alt="" className="how__item-img" />
                         <h6 className="how__item-title item__title">Start Earning</h6>
                         <p className="how__item-text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="digest">
+            <div className="container">
+                <div className="digest__inner">
+                    <img src={digest} alt="" className="digest__img" />
+                    <div className="digest__info">
+                        <h3 className="digest__info-title section__title">Join our weekly digest</h3>
+                        <p className="digest__info-text">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form action="" className="digest-form">
+                            <input type="text" className="digest-form__input" placeholder='Enter your email here'/>
+                            <button className="digest-form__btn purple-btn">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
