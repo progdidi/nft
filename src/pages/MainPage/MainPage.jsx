@@ -3,6 +3,7 @@ import example from './images/example.png';
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
 import CreatorItem from '../../components/CreatorItem/CreatorItem';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
+import NFTItem from '../../components/NFTItem/NFTItem';
 
 const MainPage = () => {
     return ( 
@@ -69,6 +70,20 @@ const MainPage = () => {
 
                 <div className="categories__items">
                     <CategoryItem/>
+                </div>
+            </div>
+        </section>
+
+        <section className="more">
+            <div className="container">
+                <h3 className="more__title section__title">Discover More NFTs</h3>
+
+                <p className="more__text">Explore new trending NFTs</p>
+
+                <a href="" className="more__link">See</a>
+
+                <div className="more__items">
+                    <NFTItem/>
                 </div>
             </div>
         </section>
