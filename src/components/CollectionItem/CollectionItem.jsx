@@ -7,7 +7,7 @@ import exampleAuthor from './exampleAuthor.png';
 
 const CollectionItem = () => {
     return (
-        <div className="collection-item">
+        <a href="" className="collection-item">
             <div className="collection-item__media">
                 <img src={exampleMain} alt="" className="collection-item__media-main" />
                 <div className="collection-item__preview">
@@ -23,12 +23,12 @@ const CollectionItem = () => {
                 </div>
             </div>
 
-            <h6 className="collection-item__title">DSGN Animals</h6>
+            <h6 className="collection-item__title item__title">DSGN Animals</h6>
             <div className="collection-item__author">
                 <img src={exampleAuthor} alt="" className="collection-item__author-img" />
                 <p className="collection-item__author-name">MrFox</p>
             </div>
-        </div>
+        </a>
     )
 }
 
