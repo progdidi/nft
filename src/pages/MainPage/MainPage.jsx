@@ -2,6 +2,7 @@ import './mainPage.scss';
 import example from './images/example.png';
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
 import CreatorItem from '../../components/CreatorItem/CreatorItem';
+import CategoryItem from '../../components/CategoryItem/CategoryItem';
 
 const MainPage = () => {
     return ( 
@@ -58,6 +59,16 @@ const MainPage = () => {
 
                 <div className="creators__items">
                     <CreatorItem/>
+                </div>
+            </div>
+        </section>
+
+        <section className="categories">
+            <div className="container">
+                <h3 className="categories__title section__title">Browse Categories</h3>
+
+                <div className="categories__items">
+                    <CategoryItem/>
                 </div>
             </div>
         </section>

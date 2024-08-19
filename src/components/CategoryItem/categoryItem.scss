@@ -1,0 +1,20 @@
+.category-item {
+    width: 240px;
+    
+    &__media {
+        position: relative;
+        .category-item__icon {
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__title {
+        background-color: var(--background--secondary);
+        padding: 20px 30px 25px 30px;
+
+    }
+}
