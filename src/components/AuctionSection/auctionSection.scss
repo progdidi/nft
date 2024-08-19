@@ -1,0 +1,80 @@
+.auction {
+    position: relative;
+    padding: 360px 0 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./auction.png');
+    &__info {
+        position: relative;
+    }
+    &__author {
+        width:fit-content;
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: var(--background--secondary);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: var(--second-font);
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: var(--second-font);
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 110%;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    .auction-timer {
+        border-radius: 20px;
+        width: 295px;
+        padding: 30px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(59, 59, 59, 0.5);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        &__text {
+            font-size: 12px;
+            line-height: 110%;
+            margin-bottom: 10px;
+        }
+        &__items {
+            display: flex;
+            .auction-timer__item {
+                position: relative;
+                padding-right: 30px;
+                &::after {
+                    position: absolute;
+                    content: ':';
+                    right: 0;
+                    top: 0;
+                    transform: translateY(-50%);
+                    font-weight: 700;
+                    font-size: 38px;
+                    line-height: 120%;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &-num {
+                    font-weight: 700;
+                    font-size: 38px;
+                    line-height: 120%;
+                    margin-bottom: 5px;
+                }
+                &-text {
+                    font-size: 12px;
+                    line-height: 110%;
+                }
+            }
+        }
+    }
+}

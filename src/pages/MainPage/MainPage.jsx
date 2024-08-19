@@ -4,6 +4,7 @@ import CollectionItem from '../../components/CollectionItem/CollectionItem';
 import CreatorItem from '../../components/CreatorItem/CreatorItem';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
 import NFTItem from '../../components/NFTItem/NFTItem';
+import AuctionSection from '../../components/AuctionSection/AuctionSection';
 
 const MainPage = () => {
     return ( 
@@ -87,6 +88,8 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
+
+        <AuctionSection/>
         </>
      );
 }
