@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
 import CreateAccPage from "./pages/CreateAccPage/CreateAccPage";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
+import NFTPage from "./pages/NFTPage/NFTPage";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header/>
       {/* <MainPage/>
       <CreateAccPage/> */}
-      <ArtistPage/>
+      {/* <ArtistPage/> */}
+      <NFTPage/>
       <Footer/>
     </div>
   );

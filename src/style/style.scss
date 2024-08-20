@@ -36,6 +36,15 @@ button {
     margin: 0 auto;
 }
 
+.descr__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+}
+
 .page__title {
     font-family: var(--second-font);
     font-weight: 600;

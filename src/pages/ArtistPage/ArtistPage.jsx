@@ -9,20 +9,26 @@ import instagram from './social/instagram.svg';
 import twitter from './social/twitter.svg';
 import youtube from './social/youtube.svg';
 import example from './example.png';
+import bg from './bg.png';
 
 const ArtistPage = () => {
     return ( 
         <>
 
         <div className="artist-page">
+            <div className="artist-page__bg">
+                <img src={bg} alt="" className="artist-page__bg-img" />
+            </div>
             <div className="artist-info">
                 <div className="container">
                     <img src={example} alt="" className="artist-info__img" />
-                    <h2 className="artist-info__title page__title">Animakid</h2>
-                    <div className="artist-info__buttons">
-                        <button className="artist-info__btn">0xc0E3...B79C</button>
-                        <button className="artist-info__btn">Follow</button>
-                    </div>
+                    <div className="artist-info__header">
+                        <h2 className="artist-info__title page__title">Animakid</h2>
+                        <div className="artist-info__buttons">
+                            <button className="artist-info__btn purple-btn">0xc0E3...B79C</button>
+                            <button className="artist-info__btn">Follow</button>
+                        </div>
+                    </div>                  
 
                     <div className="artist-info__numbers">
                         <div className="artist-info__numbers-item">
@@ -40,11 +46,11 @@ const ArtistPage = () => {
                     </div>
 
                     <div className="artist-info__bio">
-                        <h6 className="artist-info__div-title">Bio</h6>
+                        <h6 className="descr__title">Bio</h6>
                         <p className="artist-info__bio-text">The internet's friendliest designer kid.</p>
                     </div>
 
-                    <h6 className="artist-info__div-title">Links</h6>
+                    <h6 className="descr__title">Links</h6>
                     <div className="artist-info__links">
                         <a href="" className="artist-info__links-item">
                             <img src={globe} alt="" className="artist-info__links-img" />
