@@ -153,58 +153,14 @@
     &__title {
         margin-bottom: 10px;
     }
+
     &__text {
-        font-size: 22px;
-        line-height: 160%;
-        text-transform: capitalize;
         margin-bottom: 48px;
-        font-family: var(--second-font);
     }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        .how__item {
-            text-align: center;
-            border-radius: 20px;
-            padding: 10px 30px 30px 30px;
-            background: var(--background--secondary);
-            width: 330px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &-img {
-                margin-bottom: 20px;
-            }
-            &-title {
-                margin-bottom: 10px;
-            }
-            &-text {
-                font-family: var(--second-font);
-                font-weight: 400;
-            }
-        }
-        
     }
-    
-    
 }
-
-.digest {
-    padding-top: 40px;
-    padding-bottom: 80px;
-    .digest__inner {
-        background: var(--background--secondary);
-        border-radius: 20px;
-        padding: 60px;
-        display: flex;
-        justify-content: space-between;
-        .digest__img {
-        }
-        
-        
-    }
-    
-}
-

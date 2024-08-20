@@ -5,13 +5,7 @@ import CreatorItem from '../../components/CreatorItem/CreatorItem';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
 import NFTItem from '../../components/NFTItem/NFTItem';
 import AuctionSection from '../../components/AuctionSection/AuctionSection';
-
-//images
-import how1 from './HowItem/how1.svg';
-import how2 from './HowItem/how2.svg';
-import how3 from './HowItem/how3.svg';
-import digest from './images/digest.png';
-import DigestSection from '../../components/DigestSection/DigestSection';
+import HowItem from './HowItem/HowItem';
 
 const MainPage = () => {
     return ( 
@@ -100,40 +94,15 @@ const MainPage = () => {
 
         <section className="how">
             <div className="container">
-                <h3 className="how__title section__title">How it works</h3>
-                <div className="how__text">Find out how to get started</div>
+                <h3 className="how__title section__title"></h3>
+                <p className="how__text">src/pages/MainPage/images/how/how1.svg</p>
+
                 <div className="how__items">
-                    <div className="how__item">
-                        <img src={how1} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Setup Your wallet</h6>
-                        <p className="how__item-text">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
-                    </div>
-                    <div className="how__item">
-                        <img src={how2} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Create Collection</h6>
-                        <p className="how__item-text">Upload your work and setup your collection. Add a description, social links and floor price.</p>
-                    </div>
-                    <div className="how__item">
-                        <img src={how3} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Start Earning</h6>
-                        <p className="how__item-text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
-                    </div>
+                    <HowItem/>
                 </div>
             </div>
         </section>
-
-        <section className="digest">
-            <div className="container">
-                <div className="digest__inner">
-                    <img src={digest} alt="" className="digest__img" />
-                   
-                   <DigestSection/>
-                </div>
-            </div>
-        </section>
-
         </>
-        
      );
 }
  

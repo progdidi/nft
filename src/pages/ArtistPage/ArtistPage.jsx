@@ -8,14 +8,16 @@ import globe from './social/globe.svg';
 import instagram from './social/instagram.svg';
 import twitter from './social/twitter.svg';
 import youtube from './social/youtube.svg';
+import example from './example.png';
 
 const ArtistPage = () => {
     return ( 
         <>
 
         <div className="artist-page">
-            <div className="container">
-                <div className="artist-info">
+            <div className="artist-info">
+                <div className="container">
+                    <img src={example} alt="" className="artist-info__img" />
                     <h2 className="artist-info__title page__title">Animakid</h2>
                     <div className="artist-info__buttons">
                         <button className="artist-info__btn">0xc0E3...B79C</button>
@@ -38,10 +40,11 @@ const ArtistPage = () => {
                     </div>
 
                     <div className="artist-info__bio">
-                        <h6 className="artist-info__bio-title">Bio</h6>
+                        <h6 className="artist-info__div-title">Bio</h6>
                         <p className="artist-info__bio-text">The internet's friendliest designer kid.</p>
                     </div>
 
+                    <h6 className="artist-info__div-title">Links</h6>
                     <div className="artist-info__links">
                         <a href="" className="artist-info__links-item">
                             <img src={globe} alt="" className="artist-info__links-img" />
@@ -59,11 +62,15 @@ const ArtistPage = () => {
                             <img src={instagram} alt="" className="artist-info__links-img" />
                         </a>
                     </div>
-
-                    
                 </div>
+                
 
-                <div className="artist-products">
+                
+            </div>
+
+            <div className="artist-products">
+                <div className="container">
+                    <div className="artist-products__inner">
                         <div className="artist-products__buttons">
                             <div className="artist-products__btn">Created</div>
                             <div className="artist-products__btn">owned</div>
@@ -75,7 +82,9 @@ const ArtistPage = () => {
                         </div>
                         <div className="artist-products__info"></div>
                         <div className="artist-products__info"></div>
+                    </div>
                 </div>
+                    
             </div>
             
         </div>
