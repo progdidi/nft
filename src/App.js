@@ -4,6 +4,8 @@ import MainPage from "./pages/MainPage/MainPage";
 import CreateAccPage from "./pages/CreateAccPage/CreateAccPage";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
 import NFTPage from "./pages/NFTPage/NFTPage";
+import MarketPlacePage from "./pages/MarketplacePage/MarketplacePage";
+import RankingsPage from "./pages/RankingsPage/RankingsPage";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <CreateAccPage/> */}
       {/* <ArtistPage/> */}
       <NFTPage/>
+      <MarketPlacePage/>
+      <RankingsPage/>
       <Footer/>
     </div>
   );
