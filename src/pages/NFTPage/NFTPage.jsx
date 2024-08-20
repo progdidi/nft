@@ -42,7 +42,7 @@ const NFTPage = () => {
                             </div>
 
                             <div className="nft-page__tags">
-                                <h6 className="descr__title">Description</h6>
+                                <h6 className="descr__title">Tags</h6>
                                 <div className="nft-page__tags-inner">
                                     <a href="" className="nft-page__tag">Animation</a>
                                     <a href="" className="nft-page__tag">illustration</a>

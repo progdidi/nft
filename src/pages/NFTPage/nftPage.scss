@@ -5,48 +5,89 @@
         height: 50vh;
     }
     .nft-page__inner {
+        padding: 40px 0;
+        align-items: flex-start;
         display: flex;
     }
     .nft-page__info {
         max-width: 605px;
+        &-title {
+            margin-bottom: 10px;
+        }
+        &-date {
+            margin-bottom: 30px;
+            font-family: var(--second-font);
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 160%;
+            text-transform: capitalize;
+            color: var(--gray-color);
+        }
+        .nft-page__author {
+            margin-bottom: 30px;
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+        .nft-page__descr {
+            margin-bottom: 30px;
+            font-family: var(--second-font);
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 160%;
+            &-text {
+                margin-bottom: 10px;
+            }
+        }
+        .nft-page__details {
+            margin-bottom: 30px;
+            &-link {
+                display: block;
+                font-family: var(--second-font);
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 160%;
+                margin-bottom: 10px;
+            }
+        }
+        .nft-page__tags {
+            &-inner {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .nft-page__tag {
+                    display: block;
+                    background-color: var(--background--secondary);
+                    padding: 12px 30px;
+                    border-radius: 20px;
+                    font-family: var(--second-font);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+        
     }
-    .nft-page__info-title {
-    }
-    .page__title {
-    }
-    .nft-page__info-date {
-    }
-    .nft-page__author {
-    }
-    .descr__title {
-    }
-    .nft-page__author-link {
-    }
-    .nft-page__author-img {
-    }
-    .nft-page__descr {
-    }
-    .nft-page__descr-text {
-    }
-    .nft-page__details {
-    }
-    .nft-page__details-link {
-    }
-    .nft-page__tags {
-    }
-    .nft-page__tags-inner {
-    }
-    .nft-page__tag {
-    }
+    
 }
 
 .author-more {
-}
-.author-more__title {
-}
-.section__title {
-}
-.author-more__link {
-}
-.author-more__inner {
+    padding: 80px 0;
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__link {
+
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
+    }
 }
