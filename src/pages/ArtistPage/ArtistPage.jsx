@@ -72,9 +72,9 @@ const ArtistPage = () => {
                 <div className="container">
                     <div className="artist-products__inner">
                         <div className="artist-products__buttons">
-                            <div className="artist-products__btn">Created</div>
-                            <div className="artist-products__btn">owned</div>
-                            <div className="artist-products__btn">Collection</div>
+                            <div className="artist-products__btn active">Created <span>302</span></div>
+                            <div className="artist-products__btn">owned <span>70</span></div>
+                            <div className="artist-products__btn">Collection <span>5</span></div>
                         </div>
 
                         <div className="artist-products__info">
