@@ -4,7 +4,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import CreateAccPage from "./pages/CreateAccPage/CreateAccPage";
 import ArtistPage from "./pages/ArtistPage/ArtistPage";
 import NFTPage from "./pages/NFTPage/NFTPage";
-import MarketPlacePage from "./pages/MarketplacePage/MarketplacePage";
+import MarketPlacePage from "./pages/MarketPlacePage/MarketPlacePage";
 import RankingsPage from "./pages/RankingsPage/RankingsPage";
 
 function App() {
