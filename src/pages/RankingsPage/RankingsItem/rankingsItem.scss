@@ -1,0 +1,9 @@
+.rankings-item {
+    width: 100%;
+    display: grid;
+    padding: 12px 20px;
+    background: var(--background--secondary);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 5% 44% 17% 17% 17%;
+}
