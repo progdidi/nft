@@ -13,23 +13,28 @@ const RankingsPage = () => {
             </section>
 
             <div className="rankings__info">
-                <div className="rankings__buttons">
-                    <button className="rankings__btn active tab-btn">Today</button>
-                    <button className="rankings__btn tab-btn">This Week</button>
-                    <button className="rankings__btn tab-btn">This Month</button>
-                    <button className="rankings__btn tab-btn">All Time</button>
-                </div>
-
-                <div className="rankings__items">
-                    <div className="rankings__header">
-                        <div className="rankings__item">#</div>
-                        <div className="rankings__item">Artist</div>
-                        <div className="rankings__item">Change</div>
-                        <div className="rankings__item">NFTs Sold</div>
-                        <div className="rankings__item">Volume</div>
+                <div className="container">
+                    <div className="rankings__buttons">
+                        <button className="rankings__btn active tab-btn">Today</button>
+                        <button className="rankings__btn tab-btn">This Week</button>
+                        <button className="rankings__btn tab-btn">This Month</button>
+                        <button className="rankings__btn tab-btn">All Time</button>
                     </div>
-                    <RankingsItem/>
+
+                    <div className="rankings__items">
+                        <div className="rankings__header">
+                            <div className="rankings__item">#</div>
+                            <div className="rankings__item">Artist</div>
+                            <div className="rankings__item">Change</div>
+                            <div className="rankings__item">NFTs Sold</div>
+                            <div className="rankings__item">Volume</div>
+                        </div>
+                        <RankingsItem/>
+                        <RankingsItem/>
+                        <RankingsItem/>
+                    </div>
                 </div>
+                
 
             </div>
         </>

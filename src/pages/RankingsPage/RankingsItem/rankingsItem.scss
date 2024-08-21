@@ -6,4 +6,43 @@
     border-radius: 20px;
     margin-bottom: 20px;
     grid-template-columns: 5% 44% 17% 17% 17%;
+    align-items: center;
+    &__number {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: var(--background-color);
+        color: var(--gray-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__artist {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .rankings-item__img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .rankings-item__name {
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+    }
+
+    &__change {
+        &.up {
+            color: #00ac4f;
+        }
+
+        &.down {
+            color: rgb(231, 71, 71);
+        }
+    }
 }

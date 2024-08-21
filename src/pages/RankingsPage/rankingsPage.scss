@@ -7,5 +7,11 @@
 .rankings__info {
     .rankings__items {
         padding: 40px 0;
+        .rankings__header {
+            padding: 12px 20px;
+            display: grid;
+            grid-template-columns: 5% 44% 17% 17% 17%;
+            color: var(--gray-color);
+        }
     }
 }
