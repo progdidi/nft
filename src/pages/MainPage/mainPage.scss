@@ -162,5 +162,34 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        .how__item {
+            background-color: var(--background--secondary);
+            border-radius: 20px;
+            padding: 10px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &-text {
+                font-family: var(--second-font);
+            }
+        }
+    }
+}
+
+.digest {
+    padding-top: 40px;
+    margin-bottom: 80px;
+    &__inner {
+        padding: 60px;
+        border-radius: 20px;
+        background-color: var(--background--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .digest__unfo {
+            max-width: 425px;
+        }
     }
 }

@@ -22,6 +22,10 @@ import how1 from './images/how/how1.svg';
 import how2 from './images/how/how2.svg';
 import how3 from './images/how/how3.svg';
 
+//digest section 
+import digest from './images/digest.png';
+import DigestSection from '../../components/DigestSection/DigestSection';
+
 import AuctionSection from '../../components/AuctionSection/AuctionSection';
 
 
@@ -180,6 +184,16 @@ const MainPage = () => {
                    </div>
                 </div>
             </div>
+        </section>
+
+        <section className="digest">
+            <div className="container">
+                <div className="digest__inner">
+                     <img src={digest} alt="" className="digest__img" />
+                     <DigestSection/>
+                </div>
+            </div>
+           
         </section>
         </>
      );
