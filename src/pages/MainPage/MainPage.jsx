@@ -1,7 +1,15 @@
 import './mainPage.scss';
 import example from './images/example.png';
+
+//collections
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
+import { collections } from '../../helpers/collections/collections';
+
+//creators
 import CreatorItem from '../../components/CreatorItem/CreatorItem';
+import { creators } from '../../helpers/creators/creators';
+
+
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
 import NFTItem from '../../components/NFTItem/NFTItem';
 import AuctionSection from '../../components/AuctionSection/AuctionSection';
@@ -47,7 +55,20 @@ const MainPage = () => {
                 <p className="collection__text">Checkout our weekly updated trending collection.</p>
 
                 <div className="collection__items">
-                <CollectionItem/>
+                
+                    {collections.map((coll) => {
+                            return (
+                                <CollectionItem
+                                    title={coll.title}
+                                    mainImg={coll.mainImg}
+                                    prevImg={coll.prevImg}
+                                    amount={coll.amount}
+                                    authorImg={coll.author.img}
+                                    authorName={coll.author.name}
+                                    key={coll.id}
+                                />
+                            )
+                    })}
                 </div>
             </div>
             
@@ -61,7 +82,19 @@ const MainPage = () => {
                 <a href="" className="creators__link">View Rankings</a>
 
                 <div className="creators__items">
-                    <CreatorItem/>
+
+                    {creators.map((creator) => {
+                            return (
+                                <CreatorItem
+                                    name={creator.name}
+                                    num={creator.id}
+                                    img={creator.img}
+                                    sold={creator.sold}
+                                    volume={creator.volume}
+                                    key={creator.id}
+                                />
+                            )
+                    })}
                 </div>
             </div>
         </section>

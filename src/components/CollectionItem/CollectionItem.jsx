@@ -1,32 +1,27 @@
 import './collectionItem.scss';
 
-//images
-import exampleMain from './exampleMain.png';
-import example from './example.png';
-import exampleAuthor from './exampleAuthor.png';
-
-const CollectionItem = () => {
+const CollectionItem = ({mainImg, prevImg, amount, title, authorImg, authorName}) => {
     return (
         <a href="" className="collection-item">
             <div className="collection-item__media">
-                <img src={exampleMain} alt="" className="collection-item__media-main" />
+                <img src={mainImg} alt="" className="collection-item__media-main" />
                 <div className="collection-item__preview">
                     <div className="collection-item__preview-item">
-                        <img src={example} alt="" className="collection-item__preview-img" />
+                        <img src={prevImg} alt="" className="collection-item__preview-img" />
                     </div>
                     <div className="collection-item__preview-item">
-                        <img src={example} alt="" className="collection-item__preview-img" />
+                        <img src={prevImg} alt="" className="collection-item__preview-img" />
                     </div>
                     <div className="collection-item__preview-item">
-                        <p className="collection-item__preview-num">1025+</p>
+                        <p className="collection-item__preview-num">{amount}</p>
                     </div>
                 </div>
             </div>
 
-            <h6 className="collection-item__title item__title">DSGN Animals</h6>
+            <h6 className="collection-item__title item__title">{title}</h6>
             <div className="collection-item__author">
-                <img src={exampleAuthor} alt="" className="collection-item__author-img" />
-                <p className="collection-item__author-name">MrFox</p>
+                <img src={authorImg} alt="" className="collection-item__author-img" />
+                <p className="collection-item__author-name">{authorName}</p>
             </div>
         </a>
     )
