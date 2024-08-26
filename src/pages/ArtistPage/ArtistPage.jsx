@@ -1,5 +1,5 @@
 import './artistPage.scss';
-import { works } from '../../helpers/works';
+
 import NFTItem from '../../components/NFTItem/NFTItem';
 
 //images social
