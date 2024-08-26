@@ -1,4 +1,6 @@
 import './marketPlacePage.scss';
+
+import { works } from '../../helpers/works/works';
 import NFTItem from '../../components/NFTItem/NFTItem';
 
 const MarketPlacePage = () => {
@@ -23,7 +25,18 @@ const MarketPlacePage = () => {
                 </div>
 
                 <div className="marketplace-page__info">
-                    <NFTItem/>
+                    {works.map((work) => {
+                        return (
+                            <NFTItem
+                                title={work.title}
+                                img={work.img}
+                                authorName={work.author}
+                                price={work.price}
+                                highest={work.highest}
+                                key={work.id}
+                            />
+                        )
+                    })}
                 </div>
                 <div className="marketplace-page__info"></div>
             </div>

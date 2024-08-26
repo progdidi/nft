@@ -1,5 +1,6 @@
 import './artistPage.scss';
 
+import { works } from '../../helpers/works/works';
 import NFTItem from '../../components/NFTItem/NFTItem';
 
 //images social
@@ -84,7 +85,18 @@ const ArtistPage = () => {
                         </div>
 
                         <div className="artist-products__info">
-                            <NFTItem/>
+                            {works.map((work) => {
+                                return (
+                                    <NFTItem
+                                        title={work.title}
+                                        img={work.img}
+                                        authorName={work.author}
+                                        price={work.price}
+                                        highest={work.highest}
+                                        key={work.id}
+                                    />
+                                )
+                            })}
                         </div>
                         <div className="artist-products__info"></div>
                         <div className="artist-products__info"></div>
