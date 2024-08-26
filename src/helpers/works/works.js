@@ -1,12 +1,12 @@
-import ape from './works/animakid/ape.png';
-import astro from './works/animakid/astrofiction.png';
-import cherry from './works/animakid/cherry.png';
-import dog from './works/animakid/colourfuldog.png';
-import crypto from './works/animakid/cryptocity.png';
-import distant from './works/animakid/distant.png';
-import edena from './works/animakid/edena.png';
-import robots from './works/animakid/robots.png';
-import tales from './works/animakid/tales.png';
+import ape from './animakid/ape.png';
+import astro from './animakid/astrofiction.png';
+import cherry from './animakid/cherry.png';
+import dog from './animakid/colourfuldog.png';
+import crypto from './animakid/cryptocity.png';
+import distant from './animakid/distant.png';
+import edena from './animakid/edena.png';
+import robots from './animakid/robots.png';
+import tales from './animakid/tales.png';
 
 const works = [
     {

@@ -9,11 +9,21 @@ import { collections } from '../../helpers/collections/collections';
 import CreatorItem from '../../components/CreatorItem/CreatorItem';
 import { creators } from '../../helpers/creators/creators';
 
-
+//categories
+import { categories } from '../../helpers/categories/categories';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
+
+//nft
+import { works } from '../../helpers/works/works';
 import NFTItem from '../../components/NFTItem/NFTItem';
+
+//how section
+import how1 from './images/how/how1.svg';
+import how2 from './images/how/how2.svg';
+import how3 from './images/how/how3.svg';
+
 import AuctionSection from '../../components/AuctionSection/AuctionSection';
-import HowItem from './HowItem/HowItem';
+
 
 const MainPage = () => {
     return ( 
@@ -104,7 +114,16 @@ const MainPage = () => {
                 <h3 className="categories__title section__title">Browse Categories</h3>
 
                 <div className="categories__items">
-                    <CategoryItem/>
+                    {categories.map((item) => {
+                        return (
+                            <CategoryItem
+                                title={item.title}
+                                img={item.img}
+                                icon={item.icon}
+                                key={item.id}
+                            />
+                        )
+                    })}
                 </div>
             </div>
         </section>
@@ -118,7 +137,20 @@ const MainPage = () => {
                 <a href="" className="more__link">See</a>
 
                 <div className="more__items">
-                    <NFTItem/>
+                 
+                    {works.map((work) => {
+                        return (
+                            <NFTItem
+                                title={work.title}
+                                img={work.img}
+                                authorName={work.author}
+                                price={work.price}
+                                highest={work.highest}
+                                key={work.id}
+                            />
+                        )
+                    })}
+
                 </div>
             </div>
         </section>
@@ -127,11 +159,25 @@ const MainPage = () => {
 
         <section className="how">
             <div className="container">
-                <h3 className="how__title section__title"></h3>
-                <p className="how__text">src/pages/MainPage/images/how/how1.svg</p>
+                <h3 className="how__title section__title">How it works</h3>
+                <p className="how__text">Find out how to get started</p>
 
                 <div className="how__items">
-                    <HowItem/>
+                   <div className="how__item">
+                        <img src={how1} alt="" className="how__item-img" />
+                        <h6 className="how__item-title item__title">Setup Your wallet</h6>
+                        <p className="how__item-text">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+                   </div>
+                   <div className="how__item">
+                        <img src={how2} alt="" className="how__item-img" />
+                        <h6 className="how__item-title item__title">Create Collection</h6>
+                        <p className="how__item-text">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                   </div>
+                   <div className="how__item">
+                        <img src={how3} alt="" className="how__item-img" />
+                        <h6 className="how__item-title item__title">Start Earning</h6>
+                        <p className="how__item-text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                   </div>
                 </div>
             </div>
         </section>
