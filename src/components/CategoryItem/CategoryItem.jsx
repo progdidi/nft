@@ -8,7 +8,9 @@ const CategoryItem = ({title, img, icon}) => {
         <NavLink to="/market" className="category-item">
             <div className="category-item__media">
                 <img src={img} alt="" className="category-item__img" />
-                <img src={icon} alt="" className="category-item__icon" />
+                <div className="category-item__media-overlay">
+                    <img src={icon} alt="" className="category-item__icon" />
+                </div>               
             </div>
             
 

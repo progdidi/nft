@@ -1,8 +1,10 @@
+import { NavLink } from 'react-router-dom';
+
 import './collectionItem.scss';
 
 const CollectionItem = ({mainImg, prevImg, amount, title, authorImg, authorName}) => {
     return (
-        <a href="" className="collection-item">
+        <NavLink to="/market" className="collection-item">
             <div className="collection-item__media">
                 <img src={mainImg} alt="" className="collection-item__media-main" />
                 <div className="collection-item__preview">
@@ -23,7 +25,7 @@ const CollectionItem = ({mainImg, prevImg, amount, title, authorImg, authorName}
                 <img src={authorImg} alt="" className="collection-item__author-img" />
                 <p className="collection-item__author-name">{authorName}</p>
             </div>
-        </a>
+        </NavLink>
     )
 }
 

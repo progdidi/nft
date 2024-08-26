@@ -43,3 +43,16 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .creator-item {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: unset;
+        &__img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

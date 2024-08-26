@@ -193,3 +193,62 @@
         }
     }
 }
+
+@media (max-width: 1100px) {
+    .creators {
+        &__items {
+            max-width: 80%;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .collection {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            .collection-item {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .more {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            .nft-item {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .creators {
+        &__items {
+            max-width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .creators {
+        &__items {
+        
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+    }
+
+    .categories {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+

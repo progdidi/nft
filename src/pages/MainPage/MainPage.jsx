@@ -142,7 +142,7 @@ const MainPage = () => {
 
                 <div className="more__items">
                  
-                    {works.map((work) => {
+                    {works.slice(0, 3).map((work) => {
                         return (
                             <NFTItem
                                 title={work.title}
