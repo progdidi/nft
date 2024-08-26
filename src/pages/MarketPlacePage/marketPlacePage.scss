@@ -6,10 +6,42 @@
     &-text {
         margin-bottom: 30px;
     }
+
+    .search__form {
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        border: 1px solid var(--background--secondary);
+        border-radius: 20px;
+        &-input {
+            border: none;
+            background-color: transparent;
+            color: var(--text-color);
+            width: 100%;
+            &::placeholder {
+                color: var(--gray-color);
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+        }
+    }
 }
 
-.marketplace-page__items {
+.marketplace-page__inner {
     .marketplace-page__info {
-        padding: 60px 0;
+        background-color: var(--background--secondary);
+        .marketplace-page__item {
+            padding-top: 60px;
+            padding-bottom: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
     }
 }

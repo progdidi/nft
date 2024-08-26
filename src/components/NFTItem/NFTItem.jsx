@@ -1,11 +1,12 @@
+import { NavLink } from 'react-router-dom';
+
 import './nftItem.scss';
 
-import example from './example.png';
 import exampleAuthor from './exampleAuthor.png';
 
 const NFTItem = ({img, title, authorImg, authorName, price, highest}) => {
     return (
-        <div className="nft-item">
+        <NavLink to="/nft" className="nft-item">
             <div className="nft-item__media"><img src={img} alt="" className="nft-item__media-img" /></div>
 
             <div className="nft-item__about">
@@ -26,7 +27,7 @@ const NFTItem = ({img, title, authorImg, authorName, price, highest}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </NavLink>
     )
 }
 

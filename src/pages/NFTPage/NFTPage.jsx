@@ -1,5 +1,7 @@
 import './nftPage.scss';
 
+//more
+import { works } from '../../helpers/works/works';
 import NFTItem from '../../components/NFTItem/NFTItem';
 
 import example from './example.png';
@@ -65,7 +67,18 @@ const NFTPage = () => {
                     <a href="" className="author-more__link">Go To Artist Page</a>
 
                     <div className="author-more__inner">
-                        <NFTItem/>
+                        {works.map((work) => {
+                            return (
+                                <NFTItem
+                                    title={work.title}
+                                    img={work.img}
+                                    authorName={work.author}
+                                    price={work.price}
+                                    highest={work.highest}
+                                    key={work.id}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
             </section>

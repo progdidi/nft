@@ -1,6 +1,7 @@
 .footer {
     padding: 40px 0;
     background-color: var(--background--secondary);
+    border-top: 2px solid var(--background-color);
     .footer__inner {
         display: flex;
         justify-content: space-between;

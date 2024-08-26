@@ -1,9 +1,11 @@
+import { NavLink } from 'react-router-dom';
+
 import './categoryItem.scss';
 
 
 const CategoryItem = ({title, img, icon}) => {
     return (
-        <a href="" className="category-item">
+        <NavLink to="/market" className="category-item">
             <div className="category-item__media">
                 <img src={img} alt="" className="category-item__img" />
                 <img src={icon} alt="" className="category-item__icon" />
@@ -13,7 +15,7 @@ const CategoryItem = ({title, img, icon}) => {
             <h6 className="category-item__title item__title">{title}</h6>
 
             
-        </a>
+        </NavLink>
     )
 }
 
