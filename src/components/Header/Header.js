@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 import './header.scss';
 
@@ -6,12 +7,16 @@ import './header.scss';
 import logo from './images/logo.svg';
 
 const Header = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+
     return ( 
         <header className="header">
             <div className="container-fluid">
                 <div className="header__inner">
                 <NavLink to="/" className="logo"><img src={logo} alt="" className="logo__img" /></NavLink>
-                    <nav className="menu">
+                    <nav className={showMenu ? "menu active" : "menu"}>
                         <ul className="menu__list">
                             <li className="menu__list-item">
                                  <NavLink to="/market" className="menu__list-link">Marketplace</NavLink>
@@ -27,7 +32,11 @@ const Header = () => {
                         </ul>
                     </nav>
 
-
+                    <button className="menu-btn" onClick={() => setShowMenu(!showMenu)}>
+                        <span></span>
+                        <span class="long-line"></span>
+                        <span></span>
+                    </button>
 
 
 
