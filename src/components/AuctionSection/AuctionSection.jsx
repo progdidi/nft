@@ -15,9 +15,11 @@ const AuctionSection = () => {
 
                     <h2 className="auction__title">Magic Mashrooms</h2>
 
-                    <a href="" className="auction__link">See NFT</a>
+                    
 
                     <AuctionTimer/>
+
+                    <a href="" className="auction__link">See NFT</a>
                 </div>
                 
             </div>

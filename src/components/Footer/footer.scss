@@ -2,7 +2,7 @@
     padding: 40px 0;
     background-color: var(--background--secondary);
     border-top: 2px solid var(--background-color);
-    .footer__inner {
+    &__inner {
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
@@ -86,4 +86,13 @@
         }
     }
     
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 }

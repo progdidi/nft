@@ -173,18 +173,27 @@ const MainPage = () => {
                 <div className="how__items">
                    <div className="how__item">
                         <img src={how1} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Setup Your wallet</h6>
-                        <p className="how__item-text">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+                        <div>
+                            <h6 className="how__item-title item__title">Setup Your wallet</h6>
+                            <p className="how__item-text">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+                        </div>
+                       
                    </div>
                    <div className="how__item">
                         <img src={how2} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Create Collection</h6>
-                        <p className="how__item-text">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                        <div>
+                            <h6 className="how__item-title item__title">Create Collection</h6>
+                            <p className="how__item-text">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                        </div>
+                        
                    </div>
                    <div className="how__item">
                         <img src={how3} alt="" className="how__item-img" />
-                        <h6 className="how__item-title item__title">Start Earning</h6>
-                        <p className="how__item-text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                        <div>
+                            <h6 className="how__item-title item__title">Start Earning</h6>
+                            <p className="how__item-text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                        </div>
+                       
                    </div>
                 </div>
             </div>
