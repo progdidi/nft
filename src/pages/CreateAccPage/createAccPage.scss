@@ -3,15 +3,17 @@
     font-family: var(--second-font);
     &__inner {
         display: flex;
-        align-items: center;
         gap: 60px;
+        align-items: stretch;
         .create-acc__media {
             &-img {
+                height: 100%;
+                object-fit: cover;
             }
         }
         
         .create-acc__info {
-            
+            padding: 80px 0;
             max-width: 460px;
             &-title {
                 margin-bottom: 20px;
@@ -26,10 +28,30 @@
                     display: block;
                     border: 1px solid var(--gray-color);
                     border-radius: 20px;
-                    padding: 16px 20px;
+                    padding: 13px 20px;
                     width: 100%;
-                    &:last-child {
-                        margin-bottom: 30px;
+                    position: relative;
+                    background-color: #fff;
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 20px;
+                        background-image: url('./images/User.svg');
+                        width: 20px;
+                        height: 20px;
+                        content: '';
+                    }
+                    &.mail::before {
+                        background-image: url('./images/mail.svg');
+                    }
+                    &.password::before {
+                        background-image: url('./images/password.svg');
+                    }
+                    input {
+                        border: none;
+                        width: 100%;
+                        padding-left: 32px;
                     }
                 }
                 &-btn {
@@ -43,3 +65,44 @@
     
    
 }
+
+@media (max-width: 850px) {
+    .create-acc {
+        &__inner {
+            gap: 40px;
+            .create-acc__info {
+                max-width: 325px;
+                .create-acc__form {
+                    max-width: 325px;
+                    &-input {
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .create-acc {
+        &__inner {
+            flex-direction: column;
+            .create-acc__media {
+                max-height: 250px;
+                &-img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .create-acc__info {
+                max-width: 100%;
+                .create-acc__form {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+

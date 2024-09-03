@@ -16,10 +16,22 @@ const CreateAccPage = () => {
                         <h2 className="create-acc__info-title page__title">Create account</h2>
                         <p className="create-acc__info-text">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
                         <form action="" className="create-acc__form">
-                            <input type="text" className="create-acc__form-input" placeholder="Username"/>
-                            <input type="mail" className="create-acc__form-input" placeholder="Email Address"/>
-                            <input type="password" className="create-acc__form-input" placeholder="Password"/>
-                            <input type="password" className="create-acc__form-input" placeholder="Confirm Password"/>
+                            <div className="create-acc__form-input user">
+                                <input type="text" placeholder="Username" />
+                            </div>
+
+                            <div className="create-acc__form-input mail">
+                                <input type="mail" placeholder="Email Address"/>
+                            </div>
+
+                            <div className="create-acc__form-input password">
+                                <input type="password" placeholder="Password"/>
+                            </div>
+
+                            <div className="create-acc__form-input password">
+                                 <input type="password" placeholder="Confirm Password"/>
+                            </div>       
+
                             <button className="create-acc__form-btn purple-btn">Create account</button>
                         </form>
                     </div>
