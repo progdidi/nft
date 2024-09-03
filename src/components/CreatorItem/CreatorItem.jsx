@@ -18,7 +18,7 @@ const CreatorItem = ({num, img, name, sold, volume}) => {
                 h6>
 
                 <div className="creator-item__total">
-                    <p className="creator-item__total-text">Total Sales: {sold}</p>
+                    <p className="creator-item__total-text">Total Sales: </p>
                     <p className="creator-item__total-num">{volume} ETH</p>
                 </div>
             </NavLink>
