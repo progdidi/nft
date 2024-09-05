@@ -28,6 +28,18 @@
         margin-bottom: 30px;
     }
 
+    &__link {
+        width: 198px;
+        padding: 19px 0;
+        display: block;
+        background-color: #fff;
+        color: var(--background--secondary);
+        text-align: center;
+        p::before {
+            background-image: url('../../pages/MainPage/images/creators.svg');
+        }
+    }
+
     .auction-timer {
         position: absolute;
         right: 0;

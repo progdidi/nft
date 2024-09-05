@@ -97,7 +97,7 @@ const MainPage = () => {
                 <h3 className="creators__title section__title">Top creators</h3>
                 <p className="creators__text">Checkout Top Rated Creators on the NFT Marketplace</p>
 
-                <a href="" className="creators__link purple-btn"> <p>View Rankings </p> </a>
+                <a href="" className="creators__link purple-btn link-btn"> <p>View Rankings </p> </a>
 
                 <div className="creators__items">
 
@@ -142,7 +142,7 @@ const MainPage = () => {
 
                 <p className="more__text">Explore new trending NFTs</p>
 
-                <a href="" className="more__link">See</a>
+                <a href="" className="more__link purple-btn link-btn"> <p>See All</p> </a>
 
                 <div className="more__items">
                  

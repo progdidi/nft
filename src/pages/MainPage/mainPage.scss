@@ -106,12 +106,7 @@
         position: absolute;
         top: 111px;
         right: 0;
-        display: block;
         width: 247px;
-        padding: 19px 0;
-        text-align: center;
-        background-color: transparent;
-        border: 2px solid var(--purple-color);
         p::before {
             padding-left: 32px;
             left: 0;
@@ -156,6 +151,10 @@
     }
 
     &__link {
+        width: 187px;
+        p::before {
+            background-image: url('./images/creators.svg');
+        }
 
     }
 

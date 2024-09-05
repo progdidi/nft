@@ -93,6 +93,13 @@ button {
     font-family: var(--second-family);
     color: var(--text-color);
     border-radius: 20px;
+    &.link-btn {
+        display: block;
+        background-color: transparent;
+        border: 2px solid var(--purple-color);
+        padding: 19px 0;
+        text-align: center;
+    }
     p {
         position: relative;
         padding-left: 30px;
