@@ -22,6 +22,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        padding-right: 5px;
         .rankings-item__img {
             width: 60px;
             height: 60px;
@@ -44,5 +45,36 @@
         &.down {
             color: rgb(231, 71, 71);
         }
+    }
+}
+
+@media (max-width: 900px) {
+    .rankings-item {
+        padding: 15px 20px;
+        grid-template-columns: 5% 61% 17% 17%;
+        &__number {
+            width: 24px;
+            height: 24px;
+            background-color: transparent;
+        }
+        &__artist {
+            .rankings-item__img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .rankings-item {
+        padding: 13px 10px;
+        grid-template-columns: 5% 75% 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .rankings-item {
+        grid-template-columns: 5% 70% 25%;
     }
 }

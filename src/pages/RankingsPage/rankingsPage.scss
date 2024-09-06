@@ -5,6 +5,9 @@
 }
 
 .rankings__info {
+    .mobile__buttons {
+        display: none;
+    }
     .rankings__items {
         padding: 40px 0;
         .rankings__header {
@@ -12,6 +15,67 @@
             display: grid;
             grid-template-columns: 5% 44% 17% 17% 17%;
             color: var(--gray-color);
+            border: 1px solid var(--background--secondary);
+            border-radius: 20px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .rankings__info {
+        .rankings__items {
+            .rankings__header {
+                grid-template-columns: 5% 61% 17% 17%;
+                &-item.sold {
+                    display: none;
+                }
+            }
+
+            .rankings-item {
+                &__sold {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .rankings__info {
+        .rankings__buttons {
+            display: none;
+        }
+        .mobile__buttons {
+            display: flex;
+            
+        }
+        .rankings__items {
+            .rankings__header {
+                padding: 12px 10px;
+                grid-template-columns: 5% 75% 20%;
+                &-item.change {
+                    display: none;
+                }
+            }
+
+            .rankings-item {
+                &__change {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .rankings__info {
+        .rankings__items {
+            .rankings__header {
+                grid-template-columns: 5% 70% 25%;
+            }
+
         }
     }
 }

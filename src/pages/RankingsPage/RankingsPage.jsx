@@ -22,13 +22,20 @@ const RankingsPage = () => {
                         <button className="rankings__btn tab-btn">All Time</button>
                     </div>
 
+                    <div className="mobile__buttons tab__buttons ">
+                        <button className="rankings__btn active tab-btn">1d</button>
+                        <button className="rankings__btn tab-btn">7d</button>
+                        <button className="rankings__btn tab-btn">30d</button>
+                        <button className="rankings__btn tab-btn">All Time</button>
+                    </div>
+
                     <div className="rankings__items">
                         <div className="rankings__header">
-                            <div className="rankings__item">#</div>
-                            <div className="rankings__item">Artist</div>
-                            <div className="rankings__item">Change</div>
-                            <div className="rankings__item sold">NFTs Sold</div>
-                            <div className="rankings__item">Volume</div>
+                            <div className="rankings__header-item">#</div>
+                            <div className="rankings__header-item">Artist</div>
+                            <div className="rankings__header-item change">Change</div>
+                            <div className="rankings__header-item sold">NFTs Sold</div>
+                            <div className="rankings__header-item">Volume</div>
                         </div>
 
                         {creators.map((creator) => {
