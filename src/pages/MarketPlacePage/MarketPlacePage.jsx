@@ -24,16 +24,16 @@ const MarketPlacePage = () => {
             </section>
 
             <div className="marketplace-page__inner">
-                <div className="marketplace-page__buttons">
-                    <button className="marketplace-page__btn">NFTs</button>
-                    <button className="marketplace-page__btn">Collections</button>
+                <div className="marketplace-page__buttons tab__buttons">
+                    <button className="marketplace-page__btn tab-btn active">NFTs</button>
+                    <button className="marketplace-page__btn tab-btn">Collections</button>
                 </div>
 
 
 
                 <div className="marketplace-page__info">
                     <div className="container">
-                        <div className="marketplace-page__item nft">
+                        <div className="marketplace-page__info-item nft">
                             {works.map((work) => {
                                 return (
                                     <NFTItem
@@ -48,7 +48,7 @@ const MarketPlacePage = () => {
                             })}
                         </div>
 
-                        <div className="marketplace-page__item collection">
+                        <div className="marketplace-page__info-item collection">
 
                         </div>
                     </div>

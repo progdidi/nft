@@ -7,7 +7,7 @@ const DigestSection = () => {
             <p className="digest__info-text">Get exclusive promotions & updates straight to your inbox.</p>
             <form action="" className="digest-form">
                 <input type="text" className="digest-form__input" placeholder='Enter your email here'/>
-                <button className="digest-form__btn purple-btn">Subscribe</button>
+                <button className="digest-form__btn purple-btn"> <p>Subscribe</p> </button>
             </form>
         </div>
      );

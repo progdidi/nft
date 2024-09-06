@@ -11,6 +11,7 @@
     }
     &__items {
         display: flex;
+        margin-bottom: 30px;
         .auction-timer__item {
             position: relative;
             padding-right: 30px;
@@ -18,7 +19,7 @@
                 position: absolute;
                 content: ':';
                 right: 0;
-                top: 0;
+                top: 30%;
                 transform: translateY(-50%);
                 font-weight: 700;
                 font-size: 38px;
@@ -42,5 +43,11 @@
                 line-height: 110%;
             }
         }
+
+       
+    }
+    &__btn {
+        width: 100%;
+        padding: 19px 0;
     }
 }

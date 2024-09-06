@@ -35,13 +35,45 @@
 .marketplace-page__inner {
     .marketplace-page__info {
         background-color: var(--background--secondary);
-        .marketplace-page__item {
+        &-item {
             padding-top: 60px;
             padding-bottom: 80px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
+            .nft-item {
+                width: 100%;
+                background-color: var(--background-color);
+            }
         }
         
+    }
+}
+
+@media (max-width: 900px) {
+    .marketplace-page__inner {
+        .marketplace-page__info {
+            &-item {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .marketplace-page__inner {
+        .marketplace-page__info {
+            &-item {
+                max-width: 90%;
+                margin: 0 auto;
+                grid-template-columns: repeat(1, 1fr);
+                .nft-item {
+                    max-width: 330px;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
     }
 }

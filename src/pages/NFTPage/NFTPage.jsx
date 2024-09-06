@@ -63,23 +63,26 @@ const NFTPage = () => {
 
             <section className="author-more">
                 <div className="container">
-                    <h3 className="author-more__title section__title">More from this artist</h3>
-                    <a href="" className="author-more__link">Go To Artist Page</a>
-
                     <div className="author-more__inner">
-                        {works.map((work) => {
-                            return (
-                                <NFTItem
-                                    title={work.title}
-                                    img={work.img}
-                                    authorName={work.author}
-                                    price={work.price}
-                                    highest={work.highest}
-                                    key={work.id}
-                                />
-                            )
-                        })}
+                        <h3 className="author-more__title section__title">More from this artist</h3>
+                        <a href="" className="author-more__link link-btn purple-btn">Go To Artist Page</a>
+
+                        <div className="author-more__items">
+                            {works.map((work) => {
+                                return (
+                                    <NFTItem
+                                        title={work.title}
+                                        img={work.img}
+                                        authorName={work.author}
+                                        price={work.price}
+                                        highest={work.highest}
+                                        key={work.id}
+                                    />
+                                )
+                            })}
+                        </div>
                     </div>
+                    
                 </div>
             </section>
         </>

@@ -19,6 +19,9 @@ const AuctionTimer = () => {
                 </div>
             </div>
             
+            <button className="auction-timer__btn purple-btn">
+            Place Bid
+            </button>
         </div>
      );
 }

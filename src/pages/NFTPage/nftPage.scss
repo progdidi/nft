@@ -76,18 +76,64 @@
 
 .author-more {
     padding: 80px 0;
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     &__title {
         margin-bottom: 60px;
     }
 
     &__link {
-
+        width: 267px;
     }
 
-    &__inner {
+    &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 60px;
+        .nft-item {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 830px) {
+    .author-more {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__link {
+            order: 3;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .nft-page {
+        .nft-page__info {
+            .nft-page__tags  {
+                &-inner {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                
+            }
+        }
+    }
+    .author-more {
+        &__inner {
+            flex-direction: column;
+            gap: 30px;
+
+        }
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
