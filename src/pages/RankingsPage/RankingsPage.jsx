@@ -1,5 +1,6 @@
 import './rankingsPage.scss';
 import RankingsItem from './RankingsItem/RankingsItem';
+import { creators } from '../../helpers/creators/creators';
 
 const RankingsPage = () => {
     return ( 
@@ -14,7 +15,7 @@ const RankingsPage = () => {
 
             <div className="rankings__info">
                 <div className="container">
-                    <div className="rankings__buttons">
+                    <div className="rankings__buttons tab__buttons">
                         <button className="rankings__btn active tab-btn">Today</button>
                         <button className="rankings__btn tab-btn">This Week</button>
                         <button className="rankings__btn tab-btn">This Month</button>
@@ -26,12 +27,21 @@ const RankingsPage = () => {
                             <div className="rankings__item">#</div>
                             <div className="rankings__item">Artist</div>
                             <div className="rankings__item">Change</div>
-                            <div className="rankings__item">NFTs Sold</div>
+                            <div className="rankings__item sold">NFTs Sold</div>
                             <div className="rankings__item">Volume</div>
                         </div>
-                        <RankingsItem/>
-                        <RankingsItem/>
-                        <RankingsItem/>
+
+                        {creators.map((creator) => {
+                            return (
+                                <RankingsItem
+                                    name={creator.name}
+                                    img={creator.img}
+                                    sold={creator.sold}
+                                    volume={creator.volume}
+                                    key={creator.id}
+                                />
+                            )
+                    })}
                     </div>
                 </div>
                 

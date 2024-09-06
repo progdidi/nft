@@ -54,6 +54,10 @@ button {
     }
 }
 
+.tab__buttons {
+    display: flex;
+}
+
 .tab-btn {
     font-family: var(--second-font);
     font-weight: 600;
@@ -65,6 +69,10 @@ button {
     width: 100%;
     border-bottom: 2px solid transparent;
     padding: 12px 0;
+    &:hover {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--gray-color);
+    }
     &.active {
         color: var(--text-color);
         border-bottom: 1px solid var(--gray-color);

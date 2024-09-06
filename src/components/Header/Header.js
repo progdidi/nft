@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import './header.scss';
 
@@ -9,10 +10,21 @@ import logo from './images/logo.svg';
 const Header = () => {
 
     const [showMenu, setShowMenu] = useState(false);
+    const [menuFixed, setMenuFixed] = useState('header');
+
+    const fixingMenu = () => {
+        if(window !== undefined) {
+            let windowHeight = window.scrollY;
+            windowHeight > 200 ? setMenuFixed('header fixed') : setMenuFixed('header');
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', fixingMenu);
+    })
 
 
     return ( 
-        <header className="header">
+        <header className={menuFixed}>
             <div className="container-fluid">
                 <div className="header__inner">
                 <NavLink to="/" className="logo"><img src={logo} alt="" className="logo__img" /></NavLink>
