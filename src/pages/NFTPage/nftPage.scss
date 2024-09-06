@@ -6,11 +6,10 @@
     }
     .nft-page__inner {
         padding: 40px 0;
-        align-items: flex-start;
-        display: flex;
+        position: relative;
     }
     .nft-page__info {
-        max-width: 605px;
+        max-width: 60%;
         &-title {
             margin-bottom: 10px;
         }
@@ -71,6 +70,12 @@
         }
         
     }
+
+    .auction-timer {
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
     
 }
 
@@ -102,6 +107,15 @@
 }
 
 @media(max-width: 830px) {
+    .nft-page {
+        .nft-page__info {
+            max-width: 90%;
+        }
+        .auction-timer {
+            position: static;
+            margin-bottom: 20px;
+        }
+    }
     .author-more {
         &__items {
             display: grid;

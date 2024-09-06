@@ -18,6 +18,8 @@ const NFTPage = () => {
                         <div className="nft-page__info">
                             <h2 className="nft-page__info-title page__title">The Orbitians</h2>
                             <p className="nft-page__info-date">Minted on Sep 30, 2022</p>
+                            
+                            <AuctionTimer/>
 
                             <div className="nft-page__author">
                                 <h6 className="descr__title">Created By</h6>
@@ -55,7 +57,7 @@ const NFTPage = () => {
                             </div>
                         </div>
 
-                        <AuctionTimer/>
+                        
                     </div>
                     
                 </div>
