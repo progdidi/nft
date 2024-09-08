@@ -46,7 +46,11 @@ const MainPage = () => {
                         
                     </div>
                     <div className="promo__media">
-                        <img src={example} alt="" className="promo__media-img" />
+                            <NFTItem
+                                title={works[2].title}
+                                img={works[2].img}
+                                authorName={works[2].author}
+                            />
                     </div>
 
                     <div className="promo-numbers">
