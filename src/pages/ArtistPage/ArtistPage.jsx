@@ -26,8 +26,8 @@ const ArtistPage = () => {
                     <div className="artist-info__header">
                         <h2 className="artist-info__title page__title">Animakid</h2>
                         <div className="artist-info__buttons">
-                            <button className="artist-info__btn purple-btn">0xc0E3...B79C</button>
-                            <button className="artist-info__btn purple-btn link-btn">Follow</button>
+                            <button className="artist-info__btn purple-btn copy"> <p>0xc0E3...B79C</p> </button>
+                            <button className="artist-info__btn purple-btn link-btn follow"> <p>Follow</p> </button>
                         </div>
                     </div>                  
 

@@ -28,9 +28,22 @@
         margin-bottom: 30px;
     }
     &__buttons {
+        display: flex;
+        gap: 20px;
         .artist-info__btn {
             color: var(--text-color);
             padding: 19px 30px;
+            &.copy {
+                p::before {
+                    background-image: url('./copy.svg');
+                }
+            }
+            &.follow {
+                p::before {
+                content: '+';
+                color: var(--purple-color);
+                }
+            }
         }
     }
 
@@ -115,7 +128,15 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
+    .artist-info {
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+    }
     .artist-products {        
         &__info {
             grid-template-columns: repeat(2, 1fr);
@@ -123,22 +144,7 @@
     } 
 }
 
-@media (max-width: 540px) {
-    .artist-info {
-        &__buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            .artist-info__btn {
-                width: 100%;
-            }
-        }
-    
-        
-        
-        
-    }
-    
+@media (max-width: 540px) {    
     .artist-products {  
         &__buttons {
             .artist-products__btn {
@@ -156,4 +162,29 @@
             }
         }
     } 
+}
+
+@media (max-width: 500px) {
+    .artist-info {
+        &__buttons {
+            width: 100%;
+            flex-direction: column;
+            .artist-info__btn {
+                width: 100%;
+            }
+        }
+
+        &__numbers {
+            &-item {
+                width: 92px;
+            }
+            &-main {
+                font-size: 22px;
+            }
+            &-descr {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
 }
