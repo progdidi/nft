@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './nftPage.scss';
 
 //more
@@ -23,10 +25,10 @@ const NFTPage = () => {
 
                             <div className="nft-page__author">
                                 <h6 className="descr__title">Created By</h6>
-                                <a href="" className="nft-page__author-link">
+                                <NavLink to="/artist" className="nft-page__author-link">
                                     <img src="" alt="" className="nft-page__author-img" />
                                     Orbitian
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="nft-page__descr">
