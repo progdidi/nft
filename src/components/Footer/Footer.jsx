@@ -1,4 +1,5 @@
 import DigestSection from '../DigestSection/DigestSection';
+import { NavLink } from 'react-router-dom';
 import './footer.scss';
 
 //images
@@ -42,9 +43,11 @@ const Footer = () => {
                     <div className="footer-menu">
                         <h6 className="footer__title">Explore</h6>
                         <ul className="footer-menu__list">
-                            <li className="footer-menu__list-item"><a href="" className="footer-menu__list-link">Marketplace</a></li>
-                            <li className="footer-menu__list-item"><a href="" className="footer-menu__list-link">Rankings</a></li>
-                            <li className="footer-menu__list-item"><a href="" className="footer-menu__list-link">Connect a wallet</a></li>
+                            <li className="footer-menu__list-item"><NavLink to="/market" className="footer-menu__list-link">Marketplace</NavLink></li>
+
+                            <li className="footer-menu__list-item"><NavLink to="/rankings" className="footer-menu__list-link">Rankings</NavLink></li>
+                            
+                            <li className="footer-menu__list-item"><NavLink to="/wallet" className="footer-menu__list-link">Connect a wallet</NavLink></li>
                         </ul>
                     </div>
                     <DigestSection/>

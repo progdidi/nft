@@ -85,7 +85,7 @@ const NFTPage = () => {
                             })}
                         </div>
 
-                        <a href="" className="author-more__link purple-btn section-link"> <p>Go To Artist Page</p> </a>
+                        <NavLink to="/artist" className="author-more__link purple-btn section-link"> <p>Go To Artist Page</p> </NavLink>
                     </div>
                     
                 </div>

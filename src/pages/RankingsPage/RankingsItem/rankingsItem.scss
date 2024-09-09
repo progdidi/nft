@@ -7,6 +7,12 @@
     margin-bottom: 20px;
     grid-template-columns: 5% 44% 17% 17% 17%;
     align-items: center;
+    transition: all 0.3s;
+    border: 0.5px solid transparent;
+    &:hover {
+        transform: scale(1.05);
+        border: 0.5px solid #fff;
+    }
     &__number {
         width: 30px;
         height: 30px;

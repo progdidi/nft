@@ -410,6 +410,17 @@
         }
     }
 
+    .more {
+        &__items {
+            display: flex;
+            flex-direction: column;
+            .nft-item {
+                width: 330px;
+                margin: 0 auto;
+            }
+        }
+    }
+
     .digest {
         max-width: 90%;
         margin: 0 auto;

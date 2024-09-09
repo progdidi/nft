@@ -27,6 +27,7 @@ import digest from './images/digest.png';
 import DigestSection from '../../components/DigestSection/DigestSection';
 
 import AuctionSection from '../../components/AuctionSection/AuctionSection';
+import { NavLink } from 'react-router-dom';
 
 
 const MainPage = () => {
@@ -117,7 +118,7 @@ const MainPage = () => {
                         })}
                 </div>
 
-                <a href="" className="creators__link purple-btn section-link"> <p>View Rankings </p> </a>
+                <NavLink to="/rankings" className="creators__link purple-btn section-link"> <p>View Rankings </p> </NavLink>
             </div>
                 
             </div>
@@ -167,7 +168,7 @@ const MainPage = () => {
 
                     </div>
 
-                    <a href="" className="more__link purple-btn section-link"> <p>See All</p> </a>
+                    <NavLink to="/market" className="more__link purple-btn section-link"> <p>See All</p> </NavLink>
 
                 </div>
                 
