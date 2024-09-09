@@ -45,13 +45,11 @@ const MainPage = () => {
 
                         
                     </div>
-                    <div className="promo__media">
-                            <NFTItem
-                                title={works[2].title}
-                                img={works[2].img}
-                                authorName={works[2].author}
-                            />
-                    </div>
+                    <NFTItem
+                        title={works[2].title}
+                        img={works[2].img}
+                        authorName={works[2].author}
+                    />
 
                     <div className="promo-numbers">
                         <div className="promo-numbers__item">
@@ -215,7 +213,9 @@ const MainPage = () => {
         <section className="digest">
             <div className="container">
                 <div className="digest__inner">
-                     <img src={digest} alt="" className="digest__img" />
+                        <img src={digest} alt="" className="digest__img" />
+                    
+                     
                      <DigestSection/>
                 </div>
             </div>

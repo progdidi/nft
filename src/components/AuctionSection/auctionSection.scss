@@ -43,5 +43,29 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        &__items{
+            margin-bottom: 0;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .auction {
+        padding: 120px 0 40px;
+        .auction-timer {
+            position: static;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .auction {
+        &__link {
+            width: 100%;
+        }
     }
 }
