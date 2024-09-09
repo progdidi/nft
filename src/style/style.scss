@@ -101,8 +101,13 @@ button {
     font-family: var(--second-family);
     color: var(--text-color);
     border-radius: 20px;
-    &.link-btn {
-        display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.section-link {
+        position: absolute;
+        top: 0;
+        right: 0;
         background-color: transparent;
         border: 2px solid var(--purple-color);
         padding: 19px 0;
@@ -133,5 +138,13 @@ button {
     font-size: 22px;
     line-height: 140%;
     text-transform: capitalize;
+}
+
+@media (max-width: 650px) {
+    .purple-btn {
+        &.section-link {
+            position: static;
+        }
+    }
 }
 

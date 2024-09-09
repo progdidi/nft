@@ -52,9 +52,9 @@ const Header = () => {
 
 
 
-                    <NavLink to="/create" className="user-btn purple-btn">
+                    <button className="user-btn purple-btn">
                         <p className="user-btn__text">Sign Up</p>
-                    </NavLink>
+                    </button>
                 </div>
             </div>
         </header>

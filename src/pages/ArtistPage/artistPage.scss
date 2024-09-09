@@ -33,15 +33,16 @@
         .artist-info__btn {
             color: var(--text-color);
             padding: 19px 30px;
+            position: static;
             &.copy {
                 p::before {
-                    background-image: url('./copy.svg');
+                    background-image: url('./Copy.svg');
                 }
             }
+
             &.follow {
-                p::before {
-                content: '+';
-                color: var(--purple-color);
+                p::before{
+                   background-image: url('./Plus.svg');
                 }
             }
         }
@@ -96,15 +97,29 @@
     background-color: var(--background--secondary);
     &__buttons {
         padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         background-color: var(--background-color);
         .artist-products__btn {
+            width: 100%;
+            padding: 15px 0;
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            text-transform: capitalize;
+            text-align: center;
+            border-bottom: 1px solid transparent;
+            color: var(--gray-color);
+            cursor: pointer;
             span {
                 background: var(--background---secondary);
                 border-radius: 20px;
                 padding: 5px 10px;
             }
             &.active {
-               
+                color: var(--text-color);
+                border-bottom: 2px solid var(--gray-color);
                 span {
                     background-color: var(--gray-color);
                 }
@@ -113,78 +128,7 @@
     }
     
     &__info {
-        display: none;
         padding: 80px 0;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        .nft-item {
-            width: 100%;
-            background-color: var(--background-color);
-        }
-        &.active {
-            display: grid;
-        }
         
-    }
-}
-
-@media (max-width: 860px) {
-    .artist-info {
-        &__header {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-    }
-    .artist-products {        
-        &__info {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    } 
-}
-
-@media (max-width: 540px) {    
-    .artist-products {  
-        &__buttons {
-            .artist-products__btn {
-                font-size: 16px;
-                span {
-                    display: none;
-                }
-            }
-        }      
-        &__info {
-            grid-template-columns: repeat(1, 1fr);
-            .nft-item {
-                width: 330px;
-                margin: 0 auto;
-            }
-        }
-    } 
-}
-
-@media (max-width: 500px) {
-    .artist-info {
-        &__buttons {
-            width: 100%;
-            flex-direction: column;
-            .artist-info__btn {
-                width: 100%;
-            }
-        }
-
-        &__numbers {
-            &-item {
-                width: 92px;
-            }
-            &-main {
-                font-size: 22px;
-            }
-            &-descr {
-                font-size: 16px;
-                line-height: 140%;
-            }
-        }
     }
 }

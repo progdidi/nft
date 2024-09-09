@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom';
-
 import './nftPage.scss';
+import { NavLink } from 'react-router-dom';
 
 //more
 import { works } from '../../helpers/works/works';
@@ -69,7 +68,7 @@ const NFTPage = () => {
                 <div className="container">
                     <div className="author-more__inner">
                         <h3 className="author-more__title section__title">More from this artist</h3>
-                        <a href="" className="author-more__link link-btn purple-btn">Go To Artist Page</a>
+                        
 
                         <div className="author-more__items">
                             {works.map((work) => {
@@ -85,6 +84,8 @@ const NFTPage = () => {
                                 )
                             })}
                         </div>
+
+                        <a href="" className="author-more__link purple-btn section-link"> <p>Go To Artist Page</p> </a>
                     </div>
                     
                 </div>

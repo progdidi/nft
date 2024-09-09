@@ -27,7 +27,8 @@ const ArtistPage = () => {
                         <h2 className="artist-info__title page__title">Animakid</h2>
                         <div className="artist-info__buttons">
                             <button className="artist-info__btn purple-btn copy"> <p>0xc0E3...B79C</p> </button>
-                            <button className="artist-info__btn purple-btn link-btn follow"> <p>Follow</p> </button>
+                            <button className="artist-info__btn purple-btn section-link follow"> <p>Follow</p>
+                             </button>
                         </div>
                     </div>                  
 
@@ -78,13 +79,13 @@ const ArtistPage = () => {
             <div className="artist-products">
                 <div className="container">
                     <div className="artist-products__inner">
-                        <div className="artist-products__buttons tab__buttons">
-                            <div className="artist-products__btn tab-btn active">Created <span>302</span></div>
-                            <div className="artist-products__btn tab-btn">Owned <span>70</span></div>
-                            <div className="artist-products__btn tab-btn">Collection <span>5</span></div>
+                        <div className="artist-products__buttons">
+                            <div className="artist-products__btn active">Created <span>302</span></div>
+                            <div className="artist-products__btn">owned <span>70</span></div>
+                            <div className="artist-products__btn">Collection <span>5</span></div>
                         </div>
 
-                        <div className="artist-products__info active">
+                        <div className="artist-products__info">
                             {works.map((work) => {
                                 return (
                                     <NFTItem

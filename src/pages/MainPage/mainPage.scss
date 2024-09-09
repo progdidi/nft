@@ -105,7 +105,9 @@
 
 .creators {
     padding: 80px 0;
-    position: relative;
+    &__inner {
+        position: relative;
+    }
     &__title {
         margin-bottom: 10px;
     }
@@ -119,9 +121,6 @@
     }
 
     &__link {
-        position: absolute;
-        top: 111px;
-        right: 0;
         width: 247px;
         p::before {
             padding-left: 32px;
@@ -151,6 +150,9 @@
 }
 
 .more {
+    &__inner {
+        position: relative;
+    }
     padding: 80px 0;
     &__title {
         margin-bottom: 10px;
@@ -169,7 +171,7 @@
     &__link {
         width: 187px;
         p::before {
-            background-image: url('./images/creators.svg');
+            background-image: url('./images/more.svg');
         }
 
     }

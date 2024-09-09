@@ -98,26 +98,30 @@ const MainPage = () => {
 
         <section className="creators">
         <div className="container">
+            <div className="creators__inner">
                 <h3 className="creators__title section__title">Top creators</h3>
                 <p className="creators__text">Checkout Top Rated Creators on the NFT Marketplace</p>
-
-                <a href="" className="creators__link purple-btn link-btn"> <p>View Rankings </p> </a>
+                    
 
                 <div className="creators__items">
 
-                    {creators.map((creator) => {
-                            return (
-                                <CreatorItem
-                                    name={creator.name}
-                                    num={creator.id}
-                                    img={creator.img}
-                                    sold={creator.sold}
-                                    volume={creator.volume}
-                                    key={creator.id}
-                                />
-                            )
-                    })}
+                        {creators.map((creator) => {
+                                return (
+                                    <CreatorItem
+                                        name={creator.name}
+                                        num={creator.id}
+                                        img={creator.img}
+                                        sold={creator.sold}
+                                        volume={creator.volume}
+                                        key={creator.id}
+                                    />
+                                )
+                        })}
                 </div>
+
+                <a href="" className="creators__link purple-btn section-link"> <p>View Rankings </p> </a>
+            </div>
+                
             </div>
         </section>
 
@@ -142,28 +146,33 @@ const MainPage = () => {
 
         <section className="more">
             <div className="container">
-                <h3 className="more__title section__title">Discover More NFTs</h3>
+                <div className="more__inner">
+                    <h3 className="more__title section__title">Discover More NFTs</h3>
 
-                <p className="more__text">Explore new trending NFTs</p>
+                    <p className="more__text">Explore new trending NFTs</p>
 
-                <a href="" className="more__link purple-btn link-btn"> <p>See All</p> </a>
+                   
+                    <div className="more__items">
+                    
+                        {works.slice(0, 3).map((work) => {
+                            return (
+                                <NFTItem
+                                    title={work.title}
+                                    img={work.img}
+                                    authorName={work.author}
+                                    price={work.price}
+                                    highest={work.highest}
+                                    key={work.id}
+                                />
+                            )
+                        })}
 
-                <div className="more__items">
-                 
-                    {works.slice(0, 3).map((work) => {
-                        return (
-                            <NFTItem
-                                title={work.title}
-                                img={work.img}
-                                authorName={work.author}
-                                price={work.price}
-                                highest={work.highest}
-                                key={work.id}
-                            />
-                        )
-                    })}
+                    </div>
+
+                    <a href="" className="more__link purple-btn section-link"> <p>See All</p> </a>
 
                 </div>
+                
             </div>
         </section>
 

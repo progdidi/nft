@@ -82,6 +82,7 @@
 .author-more {
     padding: 80px 0;
     &__inner {
+        position: relative;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -93,6 +94,10 @@
 
     &__link {
         width: 267px;
+        padding: 0 50px;
+        p::before {
+            background-image: url('./link.svg');
+        }
     }
 
     &__items {
@@ -120,9 +125,6 @@
         &__items {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-        }
-        &__link {
-            order: 3;
         }
     }
 }
