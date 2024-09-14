@@ -1,4 +1,3 @@
-import id1 from './images/1.png';
 import id2 from './images/2.png';
 import id3 from './images/3.png';
 import id4 from './images/4.png';
@@ -14,7 +13,7 @@ import id12 from './images/12.png';
 const creators = [
     {
         name: 'Jaydon Ekstrom Bothman',
-        img: id1, 
+        img: id2, 
         id: 1,
         sold: 800, 
         volume: 12.4,

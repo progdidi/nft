@@ -14,13 +14,17 @@ const CreatorItem = ({num, img, name, sold, volume}) => {
 
                 <img src={img} alt="" className="creator-item__img" />
 
-                <h6 className="creator-item__title item__title">{name}</
-                h6>
+                <div>
+                    <h6 className="creator-item__title item__title">{name}</
+                    h6>
 
-                <div className="creator-item__total">
-                    <p className="creator-item__total-text">Total Sales: </p>
-                    <p className="creator-item__total-num">{volume} ETH</p>
+                    <div className="creator-item__total">
+                        <p className="creator-item__total-text">Total Sales: </p>
+                        <p className="creator-item__total-num">{volume} ETH</p>
+                    </div>
                 </div>
+
+                
             </NavLink>
         </>
         
