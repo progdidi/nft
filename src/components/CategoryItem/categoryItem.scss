@@ -4,7 +4,11 @@
     min-width: 150px;
     &__media {
         position: relative;
+        .category-item__img {
+            border-radius: 20px 20px 0 0;
+        }
         &-overlay {
+            border-radius: 20px 20px 0 0;
             height: 100%;
             width: 100%;
             position: absolute;
@@ -22,7 +26,18 @@
 
     &__title {
         background-color: var(--background--secondary);
-        padding: 20px 30px 25px 30px;
+        padding: 20px 0 25px 30px;
+        border-radius: 0 0 20px 20px;
 
+    }
+}
+
+@media (max-width: 920px) {
+    .category-item {
+        &__title {
+            padding: 20px 0 25px 20px;
+            font-size: 16px;
+            line-height: 140%;
+        }
     }
 }
