@@ -97,29 +97,20 @@
     background-color: var(--background--secondary);
     &__buttons {
         padding-top: 10px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         background-color: var(--background-color);
         .artist-products__btn {
-            width: 100%;
             padding: 15px 0;
-            font-family: var(--second-font);
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 140%;
-            text-transform: capitalize;
-            text-align: center;
             border-bottom: 1px solid transparent;
-            color: var(--gray-color);
-            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
             span {
-                background: var(--background---secondary);
+                background: var(--background--secondary);
                 border-radius: 20px;
                 padding: 5px 10px;
             }
             &.active {
-                color: var(--text-color);
-                border-bottom: 2px solid var(--gray-color);
                 span {
                     background-color: var(--gray-color);
                 }
@@ -129,6 +120,61 @@
     
     &__info {
         padding: 80px 0;
+        &-item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .nft-item {
+                width: 100%;
+                background-color: var(--background-color);
+            }
+        }
         
+    }
+}
+
+@media (max-width: 870px) {
+    .artist-products {
+        &__info {
+            &-item {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .artist-products {
+        &__buttons {
+            .artist-products__btn {
+                font-size: 16px;
+            }
+        }
+        &__info {
+            &-item {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .artist-products {
+        &__buttons {
+            .artist-products__btn {
+                span {
+                    display: none;
+                }
+            }
+        }
+        &__info {
+            &-item {
+                grid-template-columns: repeat(1, 1fr);
+                .nft-item {
+                    max-width: 330px;
+                    margin: 0 auto;
+                }
+            }
+        }
     }
 }

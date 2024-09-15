@@ -14,8 +14,8 @@ const works = [
         title: 'Distant Galaxy',
         author: 'Animakid',
         id: 1,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -23,8 +23,8 @@ const works = [
         title: 'Life On Edena',
         author: 'Animakid',
         id: 2,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -32,8 +32,8 @@ const works = [
         title: 'AstroFiction',
         author: 'Animakid',
         id: 3,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -41,8 +41,8 @@ const works = [
         title: 'CryptoCity',
         author: 'Animakid',
         id: 4,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -50,8 +50,8 @@ const works = [
         title: 'ColorfulDog 0524',
         author: 'Animakid',
         id: 5,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -59,8 +59,8 @@ const works = [
         title: 'Space Tales',
         author: 'Animakid',
         id: 6,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -68,8 +68,8 @@ const works = [
         title: 'Cherry Blossom Girl 037',
         author: 'Animakid',
         id: 7,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -77,8 +77,8 @@ const works = [
         title: 'Dancing Robots 0987',
         author: 'Animakid',
         id: 8,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }, 
 
     {
@@ -86,8 +86,8 @@ const works = [
         title: 'IceCream Ape ',
         author: 'Animakid',
         id: 9,
-        price: '1.63 ETH',
-        highest: '0.33 wETH'
+        price: 1.63,
+        highest: 0.33
     }
 
 

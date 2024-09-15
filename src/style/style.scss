@@ -69,6 +69,7 @@ button {
     width: 100%;
     border-bottom: 2px solid transparent;
     padding: 12px 0;
+    cursor: pointer;
     &:hover {
         color: var(--text-color);
         border-bottom: 1px solid var(--gray-color);

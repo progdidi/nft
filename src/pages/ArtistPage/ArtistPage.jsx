@@ -77,32 +77,46 @@ const ArtistPage = () => {
             </div>
 
             <div className="artist-products">
-                <div className="container">
-                    <div className="artist-products__inner">
-                        <div className="artist-products__buttons">
-                            <div className="artist-products__btn active">Created <span>302</span></div>
-                            <div className="artist-products__btn">owned <span>70</span></div>
-                            <div className="artist-products__btn">Collection <span>5</span></div>
-                        </div>
+                <div className="artist-products__buttons">
+                    <div className="container">
+                        <div className="tab__buttons">
+                            <button className="artist-products__btn tab-btn active" data-product="created">Created  <span>302</span>
+                            </button>
 
-                        <div className="artist-products__info">
-                            {works.map((work) => {
-                                return (
-                                    <NFTItem
-                                        title={work.title}
-                                        img={work.img}
-                                        authorName={work.author}
-                                        price={work.price}
-                                        highest={work.highest}
-                                        key={work.id}
-                                    />
-                                )
-                            })}
+                            <button className="artist-products__btn tab-btn" data-product="owned">Owned  <span>70</span>
+                            </button>
+
+                            <button className="artist-products__btn tab-btn" data-product="collection">Collection     <span>5</span>
+                            </button>
                         </div>
-                        <div className="artist-products__info"></div>
-                        <div className="artist-products__info"></div>
                     </div>
+                    
                 </div>
+                
+                <div className="artist-products__info">
+                    <div className="container">
+                        <div className="artist-products__info-item" data-product="created">
+
+                            {works.map((work) => {
+                            return (
+                                <NFTItem
+                                    title={work.title}
+                                    img={work.img}
+                                    authorName={work.author}
+                                    price={work.price}
+                                    highest={work.highest}
+                                    key={work.id}
+                                />
+                            )
+                            })}
+
+                        </div>
+                        <div className="artist-products__info-item" data-product="owned"></div>
+                        <div className="artist-products__info-item" data-product="collection"></div>
+                    </div>
+                    
+                </div>
+               
                     
             </div>
             
