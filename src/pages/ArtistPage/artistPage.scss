@@ -3,8 +3,6 @@
         width: 100%;
         height: 320px;
         &-img {
-            width: 100%;
-            object-fit: cover;
         }
     }
 }
@@ -15,6 +13,8 @@
     position: relative;
 
     &__img {
+        width: 120px;
+        height: 120px;
         margin-bottom: 40px;
     }
 
@@ -22,13 +22,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    &__title {
         margin-bottom: 30px;
     }
+
     &__buttons {
         display: flex;
+        align-items: center;
         gap: 20px;
         .artist-info__btn {
             color: var(--text-color);
@@ -134,6 +133,32 @@
 }
 
 @media (max-width: 870px) {
+    .artist-info {
+        &__header {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        &__numbers {
+            &-main {
+                font-size: 22px;
+                line-height: 160%;
+            }
+            &-descr {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+
+        &__bio {           
+            &-text {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
     .artist-products {
         &__info {
             &-item {
@@ -158,6 +183,16 @@
     }
 }
 
+@media (max-width: 670px) {
+    .artist-info {
+        &__buttons {
+            .artist-info__btn {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 560px) {
     .artist-products {
         &__buttons {
@@ -174,6 +209,22 @@
                     max-width: 330px;
                     margin: 0 auto;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-info {
+        &__img {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__buttons {
+            flex-direction: column;
+            width: 100%;
+            .artist-info__btn {
+                width: 100%;
             }
         }
     }
