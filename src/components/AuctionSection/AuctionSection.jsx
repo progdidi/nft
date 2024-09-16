@@ -1,5 +1,6 @@
 import AuctionTimer from '../AuctionTimer/AuctionTimer';
 import './auctionSection.scss';
+import { NavLink } from 'react-router-dom';
 
 import author from './author.png';
 
@@ -19,7 +20,7 @@ const AuctionSection = () => {
 
                     <AuctionTimer/>
 
-                    <a href="" className="auction__link purple-btn"> <p>See NFT</p> </a>
+                    <NavLink to="/nft" className="auction__link purple-btn"> <p>See NFT</p> </NavLink>
                 </div>
                 
             </div>

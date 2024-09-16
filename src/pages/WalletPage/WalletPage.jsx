@@ -11,7 +11,10 @@ const WalletPage = () => {
         <div className="wallet-page">
             <div className="container">
                 <div className="wallet-page__inner">
-                    <img src={wall} alt="" className="wallet-page__img" />
+                    <div className="wallet-page__media">
+                        <img src={wall} alt="" className="wallet-page__media-img" />
+                    </div>
+                   
 
                     <div className="wallet-page__info">
                         <h2 className="wallet-page__title page__title">Connect wallet</h2>
